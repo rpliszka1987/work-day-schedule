@@ -1,9 +1,3 @@
-//  Show work schedule from 9 AM - 5 PM 
-
-// Create row wirth time / textarea / save button
-
-// Save items to local storage
-
 // Use different color to show when the task is do or past due.
 
 // Variables declaration
@@ -17,7 +11,11 @@ var containerEl = $(".container");
 // Adds date to page
 currentDateEl.text(dateNow);
 
-function displayTimes() {
-
-
-};
+// Save tasks to local storage when clicked on save
+$(".saveBtn").on("click", function () {
+    // Gets value of text area
+    var value = $(this).siblings(".description").val().trim();
+    // Get div id
+    var time = $(this).parent().attr("id");
+    localStorage.setItem(time, value);
+});
