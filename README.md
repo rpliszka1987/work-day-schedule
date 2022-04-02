@@ -9,3 +9,7 @@
 ## Repo Url
 
 - https://rpliszka1987.github.io/work-day-schedule/
+
+## Page Image
+
+![Page Screenshot](./assets/images/pagePhoto.png)
