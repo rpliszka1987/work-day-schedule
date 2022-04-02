@@ -11,6 +11,13 @@
 var currentDateEl = $("#currentDay");
 // Gets current date
 var dateNow = moment().format("dddd, MMMM Do YYYY");
+// Get div container from page
+var containerEl = $(".container");
 
 // Adds date to page
 currentDateEl.text(dateNow);
+
+function displayTimes() {
+
+
+};
